@@ -1,10 +1,14 @@
+/**
+ * Created by nutan on 14/05/17.
+ */
+
 var canvas=document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 var ballRadius=10;
 //to move
 
 var x=canvas.width/2;
-var y=30;
+var y=20;
 var dx=2;
 
 
@@ -119,18 +123,20 @@ function draw(){
         dx = -dx;
     }
     if(y + dy < ballRadius) {
-        dy = -dy;
-    }
-    else if(y + dy > canvas.height-ballRadius) {
+        // this is the paddle edge condition
+        // check if ball is within paddle
         if(x > paddleX && x < paddleX + paddleWidth) {
-            if(y= y-paddleHeight){
-                dy = -dy;
-            }
+            dy = -dy;
         }
         else {
             //alert("GAME OVER");
+            //return 1;
             document.location.reload();
         }
+
+    }
+    else if(y + dy > canvas.height-ballRadius) {
+        dy = -dy
     }
     if(rightPressed && paddleX<canvas.width-paddleWidth){
         paddleX+=7;
