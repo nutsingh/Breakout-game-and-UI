@@ -5,6 +5,7 @@
 }
 body {
     background-color: #efefef;
+    font-size: 1.4rem;
 }
 .content-wrapper {
     padding: 30px;
@@ -13,7 +14,7 @@ body {
 .logo-title {
     display: inline-block;
     vertical-align: middle;
-    font-size: 30px;
+    font-size: 2.875rem;
     color: #9e9898;
     letter-spacing: 0.02em;
 }
@@ -38,13 +39,13 @@ body {
     box-shadow: 1px 1px 2px #a0a0a0;
 }
 .box-title {
-    font-size: 21px;
+    font-size: 2.1125rem;
     font-weight: 400;
     text-align: center;
     margin: 0 0 30px 0;
 }
 .box-title-bottom {
-    font-size: 21px;
+    font-size: 2.1125rem;
     font-weight: 400;
     margin: 10px 0 30px 0;
     color: #9e9898;
@@ -84,18 +85,15 @@ body {
 }
 
 @media screen and (max-width:767px) {
-    body {
-        font-size: 0.875rem;
-    }
     .logo-title {
         display: block;
         text-align: center;
-        font-size: 1.625rem;
+        font-size: 2.625rem;
         margin-bottom: 15px;
     }
     .ambition-box-wrapper {
         width: 90%;
-        height: 340px;
+        height: 320px;
     }
     .ambition-box-wrapper .inner-wrapper {
         padding: 0 10px;
@@ -108,17 +106,13 @@ body {
         text-align: center;
         float: initial;
     }
-    .box-title {
-        font-size: 1.5125rem;
-    }
     .box-title-bottom {
         text-align: center;
-        font-size: 1.5125rem;
     }
 }
 @media(min-width: 441px) and (max-width: 767px){
     .ambition-box-wrapper {
         width: 90%;
-        height: 250px;
+        height: 305px;
     }
 }
