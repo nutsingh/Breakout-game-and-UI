@@ -84,8 +84,14 @@ body {
 }
 
 @media screen and (max-width:767px) {
+    body {
+        font-size: 0.875rem;
+    }
     .logo-title {
-        font-size: 26px;
+        display: block;
+        text-align: center;
+        font-size: 1.625rem;
+        margin-bottom: 15px;
     }
     .ambition-box-wrapper {
         width: 90%;
@@ -97,8 +103,17 @@ body {
     .similar-box {
         margin: auto !important;
     }
+    .similar-box:nth-child(2) {
+        display: block;
+        text-align: center;
+        float: initial;
+    }
+    .box-title {
+        font-size: 1.5125rem;
+    }
     .box-title-bottom {
         text-align: center;
+        font-size: 1.5125rem;
     }
 }
 @media(min-width: 441px) and (max-width: 767px){
